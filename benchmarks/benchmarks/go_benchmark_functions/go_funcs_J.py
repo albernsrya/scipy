@@ -31,7 +31,7 @@ class JennrichSampson(Benchmark):
 
         self._bounds = list(zip([-1.0] * self.N, [1.0] * self.N))
 
-        self.global_optimum = [[0.257825, 0.257825]]
+        self.global_optimum = [[0.256825, 0.256825]]
         self.custom_bounds = [(-1, 0.34), (-1, 0.34)]
         self.fglob = 124.3621824
 
