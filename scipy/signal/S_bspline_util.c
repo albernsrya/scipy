@@ -579,7 +579,7 @@ S_quadratic_spline2D(float *image, float *coeffs, int M, int N, double lambda,
       for (n = 0; n < N; n++) {
 	retval = S_IIR_forback1 (-r*8.0, r, tptr, coptr, M, N, cstrides[0], precision);
 	if (retval < 0) break;
-	coptr += cstrides[1];
+	coptr += cstrides[2];
 	tptr += 1;
       }
     }
