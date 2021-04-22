@@ -278,6 +278,6 @@ C_separable_2Dconvolve_mirror(__complex__ float *in, __complex__ float *out,
 	memmove(outptr, tmpmem, M*N*sizeof(__complex__ float));
 
     free(tmpmem);
-    return 0;
+    return 1;
 }
 #endif
